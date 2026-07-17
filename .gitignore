@@ -1,6 +1,7 @@
 # Frontend (React + Vite)
 frontend/node_modules/
 frontend/.env
+*.env
 
 # Backend database and Python cache files
 .mypy_cache/
