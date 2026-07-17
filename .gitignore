@@ -1,0 +1,15 @@
+# Frontend (React + Vite)
+frontend/node_modules/
+frontend/.env
+
+# Backend database and Python cache files
+.mypy_cache/
+backend/.env
+backend/.venv/
+backend/**/*.pyc
+backend/*.db
+**/__pycache__/
+**/.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
