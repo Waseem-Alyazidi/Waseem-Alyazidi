@@ -1,0 +1,31 @@
+# Web Framework
+Flask==3.1.1
+
+# Core web framework
+# Allow React frontend to access the API
+Flask-Cors==6.0.1
+
+# Database
+# PostgreSQL driver
+psycopg2-binary==2.9.10
+
+# Database ORM integration
+Flask-SQLAlchemy==3.1.1
+
+# Database migrations
+Flask-Migrate==4.1.0
+
+# Authentication & Security
+# JSON Web Tokens
+PyJWT==2.10.1
+
+# Secure password hashing
+argon2-cffi==25.1.0
+
+# Configuration
+# Load environment variables
+python-dotenv==1.1.1
+
+# Production
+# Production server
+gunicorn==23.0.0
