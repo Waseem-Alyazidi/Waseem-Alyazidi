@@ -1,6 +1,6 @@
 # Frontend Tests
 
-## FT-001 Frontend Vite Server Startup - 2026-07-17
+## FT-001 Frontend Vite Server Startup [v0.0.1] - 2026-07-17
 ### Objective
 Verify that the frontend application starts successfully.
 
@@ -23,3 +23,36 @@ VITE v8.1.5  ready in 157 ms
 ```
 ### Status
 ✅ Pass
+
+## FT-002 Website Header Component Verification [v0.0.2] - 2026-07-30
+### Objective
+Verify that the header component renders and functions correctly on the local development environment.
+
+### Steps
+1. Complete the code implementation for the Header component.
+2. Run `npm run dev` in the terminal to start the development server.
+3. Open `http://localhost:5173/` in the web browser.
+4. Interact with the header component and test its elements.
+
+### Expected Result
+- The header component renders properly without any errors.
+- Navigation links, scroll progress, and mobile menu function as designed.
+
+### Initial Result (Failed)
+```bash
+Uncaught TypeError: Failed to resolve import "lucide-react" from "src/components/Header.jsx". Does the file exist?
+Issue: The application failed to render due to a missing dependency: lucide-react.
+```
+
+### Resolution
+Installed the missing package using:
+```bash
+npm install lucide-react
+```
+### Re-test Result
+- Development server restarted successfully.
+- Header component rendered properly on `http://localhost:5173/`.
+- All features and interactions worked as expected with icons displayed correctly.
+
+### Status
+✅ Pass (Passed after resolution)
