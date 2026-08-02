@@ -28,8 +28,14 @@
 - Restore the Vite development environment.
 - Fix package configuration issues.
 
-## [0.0.4] - 2026-08-2
+## [0.0.4] - 2026-08-02
 ### Added
 - Implement the HomePage structure.
 - Save before install `react-router-dom` for routing.
 - Save `package-lock.json` and `package.json` in `frontend/backup/` for backup.
+
+## [0.1.0] - 2026-08-02
+### Added
+- Integrate `react-router-dom` for application routing.
+- Create `AppRouter.jsx` to manage global page layouts and navigation paths.
+- Connect `Header` and `HomePage` components within `AppRouter`.

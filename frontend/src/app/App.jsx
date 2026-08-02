@@ -1,10 +1,10 @@
 // frontend/src/app/App.jsx
-import Header from "../components/Header";
+import AppRouter from "./AppRouter.jsx";
 
 export default function App() {
     return (
         <>
-            <Header />
+            <AppRouter />
         </>
     );
 }
