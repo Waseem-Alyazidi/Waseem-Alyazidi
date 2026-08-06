@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "../components/Header.jsx"
 import HomePage from "../pages/HomePage.jsx";
+import NotFoundPage from "../pages/NotFoundPage.jsx";
 
 export default function AppRouter() {
     return (
@@ -10,6 +11,9 @@ export default function AppRouter() {
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
+
+                {/* Page doesn't exist */}
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
     );
