@@ -39,3 +39,11 @@
 - Integrate `react-router-dom` for application routing.
 - Create `AppRouter.jsx` to manage global page layouts and navigation paths.
 - Connect `Header` and `HomePage` components within `AppRouter`.
+
+## [0.1.1] - 2026-08-06
+## Added
+- Implement NotFoundPage.
+
+## Changed
+- Update `AppRouter.jsx` to support NotFoundPage.
+- Add `frontend/backup` to .gitignore.
