@@ -47,3 +47,24 @@
 ## Changed
 - Update `AppRouter.jsx` to support NotFoundPage.
 - Add `frontend/backup` to .gitignore.
+
+## [0.2.0] - 2026-08-07
+### Added
+- Implement Hero feature foundation using Context, Provider, Service, Repository, and Mock architecture.
+- Create `HeroContext` and `useHero()` hook for Hero state access.
+- Create `HeroProvider` for Hero state management and data loading.
+- Create `HeroService` as the business layer for Hero data retrieval.
+- Create `HeroRepository` as the data access layer.
+- Create versioned Hero mock data source (`hero.mock.js`) to simulate backend responses during development.
+- Implement the Hero component structure.
+- Add loading and error state handling for Hero data requests.
+- Add support for Hero content, CTA actions, availability status, location information, and profile image data.
+- Add Hero provider registration to the global application providers.
+
+### Changed
+- Update `HomePage.jsx` to render the Hero component after completing the Hero feature implementation.
+
+### Fixed
+- Correct Hero context initialization by using `createContext()` instead of `useContext()`.
+- Prevent Hero rendering before data becomes available.
+- Improve initial Hero loading state behavior.

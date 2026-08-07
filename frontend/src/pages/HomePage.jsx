@@ -1,10 +1,11 @@
 // frontend/src/pages/HomePage.jsx
 import React from "react";
 
-/*
-Importing key Homepage components
 
+// Importing key Homepage components
 import Hero from "../components/Hero.jsx";
+
+/*
 import About from "../components/About.jsx";
 import Experience from "../components/Experience.jsx";
 import Skills from "../components/Skills.jsx";
@@ -20,7 +21,7 @@ export default function HomePage() {
 
             {/* Hero section */}
             <section id="hero" className="homepage-section section-hero">
-                {/* <Hero /> */}
+                <Hero />
             </section>
 
             {/* Who am I section */}
