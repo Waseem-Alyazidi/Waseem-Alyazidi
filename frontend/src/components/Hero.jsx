@@ -1,8 +1,8 @@
 // frontend/src/components/Hero.jsx
-import { useHero } from "../context/HeroContext.js";
+import { useHome } from "../contexts/HomeContext.js";
 
 export default function Hero() {
-    const { hero, loading, error } = useHero();
+    const { home, loading, error } = useHome();
 
     // Loading state
     if (loading) {
@@ -31,7 +31,7 @@ export default function Hero() {
     }
 
     // No data found
-    if (!hero) {
+    if (!home.hero) {
         return (
             <section className="section-hero">
                 <div className="section-hero-wrapper">
@@ -53,7 +53,7 @@ export default function Hero() {
         statusText,
         locationText,
         profileImage,
-    } = hero.data;
+    } = home.hero;
 
     return (
         <section className="section-hero">

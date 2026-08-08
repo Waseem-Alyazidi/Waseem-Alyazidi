@@ -1,10 +1,10 @@
 // frontend/src/app/providers/Providers.jsx
-import HeroProvider from "./HeroProvider.jsx";
+import HomeProvider from "./HomeProvider.jsx";
 
 export default function Providers({ children }) {
     return (
-        <HeroProvider>
+        <HomeProvider>
             {children}
-        </HeroProvider>
+        </HomeProvider>
     );
 }

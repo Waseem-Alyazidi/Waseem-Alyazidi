@@ -1,9 +1,9 @@
-// frontend/src/mocks/hero.mock.js
+// frontend/src/mocks/home.mock.js
 
-export const heroMock = {
+export const homeMock = {
     version: 1,
 
-    data: {
+    hero: {
         eyebrow: "Backend & Infrastructure Engineer",
         headlineMain: "I build systems that don't fall over at",
         headlineHighlight: "3 a.m.",

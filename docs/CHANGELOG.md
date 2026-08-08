@@ -68,3 +68,29 @@
 - Correct Hero context initialization by using `createContext()` instead of `useContext()`.
 - Prevent Hero rendering before data becomes available.
 - Improve initial Hero loading state behavior.
+
+## [0.3.0] - 2026-08-08
+### Added
+- Implement Home feature architecture as the central data source for the HomePage.
+- Create `HomeContext` for shared HomePage data access.
+- Create `HomeProvider` for HomePage state management and data distribution.
+- Create `HomeService` as the business layer for HomePage data retrieval.
+- Create `HomeRepository` as the data access layer for HomePage content.
+- Create versioned Home mock data source (`home.mock.js`) to simulate complete backend responses during development.
+- Establish a unified Home data flow to support multiple page sections from a single source.
+
+### Changed
+- Replace the Hero-specific architecture with a Home-based architecture.
+- Rename `HeroProvider` to `HomeProvider`.
+- Rename `HeroContext` to `HomeContext`.
+- Rename `HeroService` to `HomeService`.
+- Rename `HeroRepository` to `HomeRepository`.
+- Rename `hero.mock.js` to `home.mock.js`.
+- Refactor application data management from a single-component scope to a page-level scope.
+- Update global providers registration to use `HomeProvider`.
+- Update HomePage data consumption to use the Home feature as the primary data source.
+- Standardize data ownership so all HomePage sections consume data from a shared Home context.
+- Prepare the frontend architecture for future integration of Skills, Projects, Education, Certificates, and additional HomePage sections without introducing dedicated providers, services, or repositories for each component.
+
+### Removed
+- Remove Hero-specific data ownership responsibilities from the application architecture.
