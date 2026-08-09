@@ -94,3 +94,12 @@
 
 ### Removed
 - Remove Hero-specific data ownership responsibilities from the application architecture.
+
+## [0.3.1] - 2026-08-09
+### Added
+- Add core Home page section components including `About`, `Certificate`, `Contact`, `Education`, `Projects`, `Skills`, and `Experience`.
+- Expand `home.mock.js` data structure to fully support all newly added Home page sections.
+
+### Changed
+- Update `AppRouter.jsx` to render the global `Footer` component across application routes.
+- Update `HomePage.jsx` to assemble and integrate all newly created section components.
