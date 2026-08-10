@@ -1,8 +1,8 @@
 // frontend/src/repositories/HomeRepository.js
-import { homeMock } from "../mocks/home.mock.js";
+import { fetchHomeData } from "../services/api";
 
 export const HomeRepository = {
     async getHome() {
-        return homeMock;
+        return fetchHomeData()
     }
 }

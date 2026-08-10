@@ -103,3 +103,16 @@
 ### Changed
 - Update `AppRouter.jsx` to render the global `Footer` component across application routes.
 - Update `HomePage.jsx` to assemble and integrate all newly created section components.
+
+## [0.3.2] - 2026-08-10
+### Added
+- Add `httpClient.js` for centralized HTTP client configuration.
+- Add `api.js` for centralized API calls.
+
+### Changed
+- Update `HomeRepository.js` to use `api.js` instead of `home.mock.js`.
+- Prepare the Frontend for future Backend integration.
+
+### Notes
+- Backend integration is not implemented yet.
+- API calls are currently prepared for future Backend use.
