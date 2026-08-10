@@ -108,6 +108,7 @@
 ### Added
 - Add `httpClient.js` for centralized HTTP client configuration.
 - Add `api.js` for centralized API calls.
+- Install `axios` library for HTTP requests.
 
 ### Changed
 - Update `HomeRepository.js` to use `api.js` instead of `home.mock.js`.
