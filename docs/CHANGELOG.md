@@ -117,3 +117,13 @@
 ### Notes
 - Backend integration is not implemented yet.
 - API calls are currently prepared for future Backend use.
+
+## [0.4.0] - 2026-08-10
+### Added
+- Initialize the Backend application structure and configuration.
+- Add initial Home API route.
+- Add `.env.example` files for Backend and Frontend.
+- Verify successful Frontend–Backend communication using hardcoded Home mock data.
+
+### Changed
+- Reorganize the Backend project structure.
