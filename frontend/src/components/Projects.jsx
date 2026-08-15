@@ -28,7 +28,7 @@ export default function Projects() {
         );
     }
 
-    if (!home?.projects) {
+    if (!home.data.projects) {
         return (
             <section className="section-projects">
                 <div className="section-projects-wrapper">
@@ -40,7 +40,7 @@ export default function Projects() {
         );
     }
 
-    const { eyebrow, title, items } = home.projects;
+    const { eyebrow, title, items } = home.data.projects;
 
     return (
         <section className="section-projects" id="projects">

@@ -31,7 +31,7 @@ export default function Hero() {
     }
 
     // No data found
-    if (!home.hero) {
+    if (!home.data.hero) {
         return (
             <section className="section-hero">
                 <div className="section-hero-wrapper">
@@ -53,7 +53,7 @@ export default function Hero() {
         statusText,
         locationText,
         profileImage,
-    } = home.hero;
+    } = home.data.hero;
 
     return (
         <section className="section-hero">

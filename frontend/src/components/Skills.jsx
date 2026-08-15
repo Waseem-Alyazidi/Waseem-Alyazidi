@@ -28,7 +28,7 @@ export default function Skills() {
         );
     }
 
-    if (!home?.skills) {
+    if (!home.data.skills) {
         return (
             <section className="section-skills">
                 <div className="section-skills-wrapper">
@@ -40,7 +40,7 @@ export default function Skills() {
         );
     }
 
-    const { eyebrow, title, items } = home.skills;
+    const { eyebrow, title, items } = home.data.skills;
 
     return (
         <section className="section-skills" id="skills">

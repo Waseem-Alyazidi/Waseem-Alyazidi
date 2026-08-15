@@ -14,7 +14,7 @@ export default function HomeProvider({ children }) {
             setLoading(true);
             setError(null);
 
-            const response = await HomeService.load();
+            const response = await HomeService.loadHomeData();
 
             setHome(response);
         } catch (err) {

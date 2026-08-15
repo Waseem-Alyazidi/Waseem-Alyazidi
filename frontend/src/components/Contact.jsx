@@ -28,7 +28,7 @@ export default function Contact() {
         );
     }
 
-    if (!home?.contact) {
+    if (!home.data.contact) {
         return (
             <section className="section-contact">
                 <div className="section-contact-wrapper">
@@ -40,7 +40,7 @@ export default function Contact() {
         );
     }
 
-    const { eyebrow, title, email, primaryCta, socials } = home.contact;
+    const { eyebrow, title, email, primaryCta, socials } = home.data.contact;
 
     return (
         <section className="section-contact" id="contact">

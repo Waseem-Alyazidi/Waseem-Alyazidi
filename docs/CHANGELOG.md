@@ -127,3 +127,26 @@
 
 ### Changed
 - Reorganize the Backend project structure.
+
+## [0.5.0] - 2026-08-15
+### Added
+- Implement Home data caching using `localStorage`.
+- Add Home cache validation before reading cached data.
+- Add Home cache versioning to detect stale cached data.
+- Add `cacheKeys.js` to centralize localStorage cache keys.
+- Add `HomeCache.js` to manage Home cache loading, saving, validation, and clearing.
+- Add `/home-data-version` endpoint for retrieving the current Home data version.
+- Add automatic Home cache refresh when the server version differs from the cached version.
+- Add automatic recovery from invalid or corrupted Home cache data.
+
+### Changed
+- Update `HomeService.js` to use cached Home data when the cache version matches the server version.
+- Update `HomeService.js` to fetch fresh Home data only when no valid cache exists or when the cached version is outdated.
+- Update `HomeRepository.js` to support Home data version retrieval.
+- Update Mock data on `home_route.py` to match the new version.
+
+### Removed
+- Remove unnecessary `home-mock.js` from the Frontend.
+
+### Fixed
+- Prevent unnecessary `/home-data` requests when the cached Home data is still up to date.

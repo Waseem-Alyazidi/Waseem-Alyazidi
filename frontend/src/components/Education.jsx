@@ -28,7 +28,7 @@ export default function Education() {
         );
     }
 
-    if (!home?.education) {
+    if (!home.data.education) {
         return (
             <section className="section-education">
                 <div className="section-education-wrapper">
@@ -40,7 +40,7 @@ export default function Education() {
         );
     }
 
-    const { eyebrow, title, items } = home.education;
+    const { eyebrow, title, items } = home.data.education;
 
     return (
         <section className="section-education" id="education">

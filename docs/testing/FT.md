@@ -77,3 +77,37 @@ Verify that all components render and function correctly using the new mock data
 
 ## Status
 ✅ Pass
+
+## FT-004 Home Cache Lifecycle Verification [v0.5.0] - 2026-08-15
+### Objective
+Verify the complete home cache lifecycle including creation, validation, version checking, refresh, and recovery from invalid cache data.
+
+### Steps
+1. Clear localStorage.
+2. Open the application.
+3. Verify that home data is fetched from the API and cached locally.
+4. Reload the application while keeping the same server version.
+5. Verify that cached data is used.
+6. Change the server version.
+7. Reload the application.
+8. Verify that fresh data is fetched and cache is updated.
+9. Manually corrupt the cache data in localStorage.
+10. Reload the application.
+
+### Expected Result
+- A new cache is created when none exists.
+- Cached data is used when versions match.
+- Cache is refreshed when versions differ.
+- Invalid cache is automatically removed.
+- A new valid cache is generated after recovery.
+- No application crashes occur during any scenario.
+
+### Result
+- Cache creation verified.
+- Cache version validation verified.
+- Cache refresh mechanism verified.
+- Invalid cache recovery verified.
+- Application remained stable throughout testing.
+
+### Status
+✅ Pass

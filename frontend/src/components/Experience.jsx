@@ -28,7 +28,7 @@ export default function Experience() {
         );
     }
 
-    if (!home?.experience) {
+    if (!home.data.experience) {
         return (
             <section className="section-experience">
                 <div className="section-experience-wrapper">
@@ -40,7 +40,7 @@ export default function Experience() {
         );
     }
 
-    const { eyebrow, title, items } = home.experience;
+    const { eyebrow, title, items } = home.data.experience;
 
     return (
         <section className="section-experience" id="experience">

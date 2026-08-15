@@ -28,7 +28,7 @@ export default function Certificates() {
         );
     }
 
-    if (!home?.certificates) {
+    if (!home.data.certificates) {
         return (
             <section className="section-certificates">
                 <div className="section-certificates-wrapper">
@@ -40,7 +40,7 @@ export default function Certificates() {
         );
     }
 
-    const { eyebrow, title, items } = home.certificates;
+    const { eyebrow, title, items } = home.data.certificates;
 
     return (
         <section className="section-certificates" id="certificates">

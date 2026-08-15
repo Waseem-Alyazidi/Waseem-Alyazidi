@@ -30,7 +30,7 @@ export default function about() {
     }
 
     // No data found
-    if (!home.about) {
+    if (!home.data.about) {
         return (
             <section className="section-about">
                 <div className="section-about-wrapper">
@@ -48,7 +48,7 @@ export default function about() {
         description,
         quote,
         facts,
-    } = home.about;
+    } = home.data.about;
 
     return (
         <section className="section-about" id="about">

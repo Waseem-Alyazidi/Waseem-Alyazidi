@@ -26,7 +26,20 @@ export default function Footer() {
         );
     }
 
-    const { brandName, tagline, sections, copyright } = home.footer;
+    // No data found
+    if (!home.data.footer) {
+        return (
+            <section className="section-footer">
+                <div className="section-footer-wrapper">
+                    <p className="section-footer-message">
+                        Footer content is currently unavailable.
+                    </p>
+                </div>
+            </section>
+        )
+    }
+
+    const { brandName, tagline, sections, copyright } = home.data.footer;
 
     return (
         <footer className="site-footer">
