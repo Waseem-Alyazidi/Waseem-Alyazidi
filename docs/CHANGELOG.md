@@ -150,3 +150,13 @@
 
 ### Fixed
 - Prevent unnecessary `/home-data` requests when the cached Home data is still up to date.
+
+## [0.5.1] - 2026-08-17
+### Added
+- Add `InvalidVersionError` custom exception for home data version validation.
+- Add regex-based semantic version formatting validation (`VERSION_PATTERN`) in `home_service.py`.
+
+### Changed
+- Refactor `home_route.py` to use Flask's shorthand `@home_bp.get()` decorator instead of `@home_bp.route(..., methods=["GET"])`.
+- Update `home_controller.py` to return proper HTTP status codes (200, 404) and JSON-formatted error messages when data or versions are missing.
+- Update `home_service.py` to enforce strict string type checking and format validation before returning the home data version.
